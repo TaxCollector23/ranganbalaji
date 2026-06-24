@@ -101,8 +101,14 @@ export type ActivityGroup = {
 
 export const activities: ActivityGroup[] = [
   {
-    group: "Competitive Academics",
+    group: "Competitions",
     items: [
+      {
+        title: "Cricket — U13 NCCA Champions",
+        meta: "Left-arm leg spin bowler",
+        description:
+          "Competitive cricketer and left-arm leg spin bowler — part of the squad that won the U13 NCCA championship. Built on disciplined practice, control, and reading the game under pressure.",
+      },
       {
         title: "Academic Bee",
         meta: "Individual buzzer competition",
