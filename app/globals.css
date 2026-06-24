@@ -200,9 +200,9 @@ a {
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(72px, 14vw, 132px);
-  line-height: 1.04;
-  padding-bottom: 0.04em;
+  font-size: clamp(64px, 12.5vw, 120px);
+  line-height: 1.22;
+  padding-bottom: 0.16em;
   background: linear-gradient(
     105deg,
     var(--text) 0%,
@@ -229,7 +229,7 @@ a {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.88;
-  color: hsl(0 0% 64%);
+  color: hsl(0 0% 75%);
   max-width: 600px;
   margin-top: 26px;
 }

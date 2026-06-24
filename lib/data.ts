@@ -107,7 +107,7 @@ export const activities: ActivityGroup[] = [
         title: "Cricket — U13 NCCA Champions",
         meta: "Left-arm leg spin bowler",
         description:
-          "Competitive cricketer and left-arm leg spin bowler — part of the squad that won the U13 NCCA championship. Built on disciplined practice, control, and reading the game under pressure.",
+          "Competitive cricketer and left-arm leg spin bowler. Took a three-wicket haul in the final to win the U13 NCCA championship — built on disciplined practice, control, and reading the game under pressure.",
       },
       {
         title: "Academic Bee",

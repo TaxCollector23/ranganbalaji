@@ -30,7 +30,7 @@ export default function FeaturedProject() {
                   <h3 className="mt-5 font-[family-name:var(--font-display)] text-[clamp(40px,7vw,68px)] italic leading-none text-[color:var(--text)]">
                     {featured.name}
                   </h3>
-                  <p className="mt-4 max-w-xl text-[16px] font-light leading-relaxed text-[hsl(0_0%_64%)]">
+                  <p className="mt-4 max-w-xl text-[16px] font-light leading-relaxed text-[hsl(0_0%_75%)]">
                     {featured.description}
                   </p>
                 </div>
@@ -65,7 +65,7 @@ export default function FeaturedProject() {
                     </span>
                     {b.title}
                   </p>
-                  <p className="mt-3 text-[15px] font-light leading-[1.8] text-[hsl(0_0%_62%)]">
+                  <p className="mt-3 text-[15px] font-light leading-[1.8] text-[hsl(0_0%_73%)]">
                     {b.body}
                   </p>
                 </div>

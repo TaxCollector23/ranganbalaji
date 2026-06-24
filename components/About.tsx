@@ -14,7 +14,7 @@ export default function About() {
             {about.narrative.map((p) => (
               <p
                 key={p.slice(0, 24)}
-                className="text-[17px] font-light leading-[1.88] text-[hsl(0_0%_64%)]"
+                className="text-[17px] font-light leading-[1.88] text-[hsl(0_0%_75%)]"
               >
                 {p}
               </p>
@@ -49,7 +49,7 @@ export default function About() {
               <Divider />
 
               <Fact label="Current Goal">
-                <p className="mt-1 text-[15px] font-light leading-relaxed text-[hsl(0_0%_64%)]">
+                <p className="mt-1 text-[15px] font-light leading-relaxed text-[hsl(0_0%_75%)]">
                   {about.goal}
                 </p>
               </Fact>

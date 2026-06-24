@@ -34,7 +34,7 @@ export default function Activities() {
                       <p className="mono mt-2 text-[10px] uppercase tracking-wide text-[color:var(--accent-lo)]">
                         {item.meta}
                       </p>
-                      <p className="mt-4 text-[14px] font-light leading-[1.7] text-[hsl(0_0%_58%)]">
+                      <p className="mt-4 text-[14px] font-light leading-[1.7] text-[hsl(0_0%_72%)]">
                         {item.description}
                       </p>
                     </div>

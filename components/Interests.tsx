@@ -20,7 +20,7 @@ export default function Interests() {
                   <h3 className="font-[family-name:var(--font-sans)] text-[15px] font-medium text-[color:var(--text)] transition-colors group-hover:text-[color:var(--accent-hi)]">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-[14px] font-light leading-[1.7] text-[hsl(0_0%_58%)]">
+                  <p className="mt-3 text-[14px] font-light leading-[1.7] text-[hsl(0_0%_72%)]">
                     {item.description}
                   </p>
                 </div>
