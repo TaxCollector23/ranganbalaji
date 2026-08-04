@@ -1,10 +1,6 @@
 import Hero from "@/components/Hero";
 import SocialLinks from "@/components/SocialLinks";
-import About from "@/components/About";
-import FeaturedProject from "@/components/FeaturedProject";
 import Projects from "@/components/Projects";
-import Activities from "@/components/Activities";
-import Interests from "@/components/Interests";
 import Footer from "@/components/Footer";
 import { site } from "@/lib/data";
 
@@ -28,11 +24,7 @@ export default function Home() {
       />
       <Hero />
       <SocialLinks />
-      <About />
-      <FeaturedProject />
       <Projects />
-      <Activities />
-      <Interests />
       <Footer />
     </main>
   );
