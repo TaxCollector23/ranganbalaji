@@ -97,6 +97,18 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: "Trace",
+    tagline: "Watches every file your AI agents touch and turns each session into a reviewable diff, a visible cost, and a checkpoint you can undo.",
+    href: "https://landing-one-hazel.vercel.app/",
+    image: "/projects/trace.png",
+  },
+  {
+    name: "SimAPI",
+    tagline: "The CI/CD layer for engineering simulations — validating CFD, FEA, and robotics output against physical law.",
+    href: "https://sim-api.vercel.app/",
+    image: "/projects/simapi.png",
+  },
+  {
     name: "Ratify",
     tagline: "Engineering governance for GitHub.",
     href: "https://ratify-rangan23.vercel.app/",
