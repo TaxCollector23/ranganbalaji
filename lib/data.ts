@@ -99,7 +99,7 @@ export const projects: Project[] = [
   {
     name: "Trace",
     tagline: "Watches every file your AI agents touch and turns each session into a reviewable diff, a visible cost, and a checkpoint you can undo.",
-    href: "https://landing-one-hazel.vercel.app/",
+    href: "https://landing-one-hazel-88.vercel.app/",
     image: "/projects/trace.png",
   },
   {
