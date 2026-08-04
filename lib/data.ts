@@ -88,6 +88,41 @@ export const featured = {
   tech: ["Next.js", "TypeScript", "React", "AI / LLMs", "Product Design", "UI/UX"],
 };
 
+export type Project = {
+  name: string;
+  tagline: string;
+  href: string;
+  image: string;
+};
+
+export const projects: Project[] = [
+  {
+    name: "Ratify",
+    tagline: "Engineering governance for GitHub.",
+    href: "https://ratify-rangan23.vercel.app/",
+    image: "/projects/ratify.png",
+  },
+  {
+    name: "Fracture Studio",
+    tagline: "Argument auditing for writing, debate, and reasoning.",
+    href: "https://fracturestudio.vercel.app/",
+    image: "/projects/fracture-studio.png",
+  },
+  {
+    name: "AfterCare",
+    tagline: "Understand your own discharge paperwork.",
+    href: "https://marinhackstigermygoat.vercel.app/",
+    image: "/projects/marinhacks.png",
+  },
+  {
+    name: "ShareStopper",
+    tagline: "Stop leaking secrets on screen share.",
+    href: "https://website-plum-six-50.vercel.app/",
+    image: "/projects/website-plum.png",
+  },
+];
+
+
 export type Activity = {
   title: string;
   meta: string;
