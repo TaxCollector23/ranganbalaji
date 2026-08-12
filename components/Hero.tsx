@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="hero-glow" aria-hidden />
 
         <motion.p className="hero-eye" {...fade(0.1)}>
-          Builder • Developer • Student
+          Middle-School Builder • Vibecoder
         </motion.p>
 
         <motion.h1 className="hero-name" {...fade(0.22)}>

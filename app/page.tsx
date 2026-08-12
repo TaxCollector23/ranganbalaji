@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
-import SocialLinks from "@/components/SocialLinks";
+import Story from "@/components/Story";
 import Projects from "@/components/Projects";
+import Activities from "@/components/Activities";
 import Footer from "@/components/Footer";
 import { site } from "@/lib/data";
 
@@ -10,7 +11,7 @@ const jsonLd = {
   name: site.name,
   url: site.url,
   email: site.email,
-  jobTitle: "Builder · Developer · Student",
+  jobTitle: "Student · Builder · Developer",
   description: site.intro,
   sameAs: [site.github, site.linkedin],
 };
@@ -23,8 +24,9 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Hero />
-      <SocialLinks />
+      <Story />
       <Projects />
+      <Activities />
       <Footer />
     </main>
   );

@@ -1,23 +1,17 @@
 import {
   Github,
   Linkedin,
-  Code2,
-  Cpu,
-  Rocket,
-  PenTool,
-  Globe,
-  MousePointerClick,
   type LucideIcon,
 } from "lucide-react";
 
 export const site = {
   name: "Rangan Balaji",
-  role: "Builder · Developer · Student",
-  url: "https://ranganbalaji.vercel.app",
+  role: "Builder · Vibecoder · Student",
+  url: "https://rangan.balajin.net",
   headline:
-    "Building software, products, and ideas that solve real problems.",
+    "I'm a middle schooler building real tools with AI — usually to fix something that was getting in my own way.",
   intro:
-    "I'm Rangan Balaji, a student interested in software engineering, startups, web technologies, AI, and product development. I enjoy building applications, experimenting with new technologies, and turning ideas into working products.",
+    "Rangan Balaji is a middle school student who builds software with AI — argument engines, dev tools, and small utilities that started as fixes for his own workflow.",
   email: "rvb@balajin.net",
   github: "https://github.com/TaxCollector23",
   githubHandle: "TaxCollector23",
@@ -45,95 +39,78 @@ export const socials: {
   },
 ];
 
-export const about = {
-  narrative: [
-    "I am interested in software engineering, product design, startups, AI, web development, and building useful technology. I enjoy learning how systems work, designing user experiences, and creating projects that move from idea to reality.",
-    "My approach is simple: start with a real problem, build something that works, then refine it relentlessly. I care as much about how a product feels to use as how it's engineered underneath.",
+/* The story that sits right below the hero — written plainly, first person. */
+export const story = {
+  label: "About",
+  lead: "How I got here",
+  paragraphs: [
+    "I'm a middle school student, and I got into this the backwards way — I started by vibecoding. First with tools like Base44 and Lovable, then hand-writing static HTML, and eventually full-stack, agent-driven development with Codex and Claude Code. Somewhere along the way it stopped being a hobby and turned into the main thing I do.",
+    "Almost everything on this page is something I actually wanted for myself. Fracture came from wanting my own arguments to hold up. Unslopify and ClaudeKeeper came straight out of the friction of working with AI agents all day. My loop is simple: find the thing in front of me that's annoying or broken, build something that fixes it, ship it, then keep sharpening it.",
+    "Away from the keyboard I play cricket, listen to way too much music, and compete in quiz bowl and other academic competitions. It's the same loop as building — prepare hard, stay calm under pressure, and try to be a little sharper every round.",
   ],
-  location: "California",
-  focus: [
-    "Software Engineering",
-    "Product Development",
-    "AI",
-    "Web Applications",
-  ],
-  goal: "Build meaningful products and continue improving as an engineer.",
-};
-
-export const featured = {
-  name: "Fracture Studio",
-  status: "Active Project",
-  href: "https://fracturestudio.vercel.app",
-  tagline: "Argument auditing for writing, debate, and reasoning.",
-  description:
-    "Fracture Studio is my primary project. It focuses on building software and digital products with an emphasis on thoughtful design, usability, and technical execution. It represents my interest in combining engineering, product thinking, and creativity to build meaningful tools and experiences.",
-  blocks: [
-    {
-      title: "Overview",
-      body: "Fracture Studio is a software product studio centered on one flagship tool: an argument-auditing engine for essays, speeches, debate cases, and plans. Rather than only polishing prose, it examines the reasoning underneath — claims, evidence, assumptions, contradictions, weak links, and likely rebuttals.",
-    },
-    {
-      title: "What I'm Building",
-      body: "A focused, fast interface that takes a rough idea and turns it into something clearer, stronger, and easier to defend. It surfaces vague claims and unsupported evidence, then helps shape arguments that hold up under pressure.",
-    },
-    {
-      title: "Why It Matters",
-      body: "Good arguments should survive scrutiny. Most writing tools optimize for tone; few examine whether the logic actually holds together. Fracture targets that gap — making thinking sharper and decisions better-reasoned.",
-    },
-    {
-      title: "Technology & Skills Involved",
-      body: "Built with modern web technology and AI, combining front-end engineering, product design, and applied language models. The work spans interface design, system architecture, prompt and reasoning design, and continuous iteration based on real use.",
-    },
-  ],
-  tech: ["Next.js", "TypeScript", "React", "AI / LLMs", "Product Design", "UI/UX"],
+  /* short, honest signal line — no invented metrics */
+  now: "Currently building Fracture Studio and open to internships, research, and people to build with.",
 };
 
 export type Project = {
   name: string;
-  tagline: string;
+  tag: string;
   href: string;
-  image: string;
+  blurb: string;
 };
 
+/* Order is intentional — flagship first, then the rest. */
 export const projects: Project[] = [
   {
+    name: "Fracture Studio",
+    tag: "Argument engine",
+    href: "https://fracturestudio.vercel.app/",
+    blurb:
+      "Paste in a speech, essay, debate case, or research paper and Fracture stress-tests the reasoning. It finds the one load-bearing claim your whole case rests on, maps how every claim and assumption connects, checks your facts against the live web before it grades, and hands back a calibrated 0–100 score with claim-by-claim ratings, an opponent attack tree, and rewrites you can paste straight back in.",
+  },
+  {
     name: "Trace",
-    tagline: "Watches every file your AI agents touch and turns each session into a reviewable diff, a visible cost, and a checkpoint you can undo.",
+    tag: "Trust layer for AI agents",
     href: "https://landing-one-hazel-88.vercel.app/",
-    image: "/projects/trace.png",
+    blurb:
+      "Trace watches every file Claude Code, Codex, Cursor, and Aider touch and turns each session into a diff you can review, a policy-checked patch, a cost you can see, and a checkpoint you can undo — with three independent models double-checking the risky calls before anything ships. The same review engine runs on every pull request in CI.",
   },
   {
     name: "SimAPI",
-    tagline: "The CI/CD layer for engineering simulations — validating CFD, FEA, and robotics output against physical law.",
+    tag: "CI for simulations",
     href: "https://sim-api.vercel.app/",
-    image: "/projects/simapi.png",
-  },
-  {
-    name: "Ratify",
-    tagline: "Engineering governance for GitHub.",
-    href: "https://ratify-rangan23.vercel.app/",
-    image: "/projects/ratify.png",
-  },
-  {
-    name: "Fracture Studio",
-    tagline: "Argument auditing for writing, debate, and reasoning.",
-    href: "https://fracturestudio.vercel.app/",
-    image: "/projects/fracture-studio.png",
+    blurb:
+      "Your solver won't tell you a run came out wrong — SimAPI will. It checks CFD, FEA, and robotics output against physical law, catching diverged runs, unit-conversion slips, sensor drift, and impossible values before the data reaches a design review or an ML pipeline. Ships as a CLI, an SDK, and a REST API with CI fail-gates.",
   },
   {
     name: "AfterCare",
-    tagline: "Understand your own discharge paperwork.",
+    tag: "Health · built at MarinHacks",
     href: "https://marinhackstigermygoat.vercel.app/",
-    image: "/projects/marinhacks.png",
+    blurb:
+      "You get handed six pages on the way out of the hospital, on a bad day. AfterCare reads your discharge summary — a PDF or a photo — and turns it into your medications, appointments, warning signs, and a daily plan you can actually follow. Every line traces back to your own paperwork, it reads itself aloud in eleven languages, and it never invents a dose or a date.",
   },
   {
-    name: "ShareStopper",
-    tagline: "Stop leaking secrets on screen share.",
-    href: "https://website-plum-six-50.vercel.app/",
-    image: "/projects/website-plum.png",
+    name: "ClaudeKeeper",
+    tag: "macOS · open source",
+    href: "https://taxcollector23.github.io/claudekeeper",
+    blurb:
+      "A tiny macOS tool that keeps your Mac awake so a long Claude Code run doesn't die the moment you step away. Three commands, no admin rights, MIT-licensed — install it with npm i -g @rangan23/claudekeeper.",
+  },
+  {
+    name: "Carbon",
+    tag: "Dev tooling",
+    href: "https://carbon-web-psi.vercel.app",
+    blurb:
+      "Point Carbon at an OpenAPI spec, a GraphQL schema, a HAR file, a Postman collection, or recorded traffic and it spins up a local, stateful replica of that API — one where a POST actually changes what the next GET returns. It's deterministic and runs fully offline, so you can build and test against an API without the real backend.",
+  },
+  {
+    name: "Unslopify",
+    tag: "Rules for AI coding agents",
+    href: "https://taxcollector23.github.io/unslopify",
+    blurb:
+      "A set of ground rules you hand your AI coding agent before it starts, so it stops filling empty space with default slop — invented metrics, pointless gradients, feature grids nobody asked for. One question runs through all of it: why does this exist? Formatted for Claude Code, Cursor, Copilot, Codex, and more.",
   },
 ];
-
 
 export type Activity = {
   title: string;
@@ -148,123 +125,60 @@ export type ActivityGroup = {
 
 export const activities: ActivityGroup[] = [
   {
-    group: "Competitions",
+    group: "Cricket",
     items: [
       {
-        title: "Cricket — U13 NCCA Champions",
-        meta: "Left-arm leg spin bowler",
+        title: "U13 NCCA Champions",
+        meta: "Left-arm leg spin",
         description:
-          "Competitive cricketer and left-arm leg spin bowler. Took a three-wicket haul in the final to win the U13 NCCA championship — built on disciplined practice, control, and reading the game under pressure.",
-      },
-      {
-        title: "Academic Bee",
-        meta: "Individual buzzer competition",
-        description:
-          "National-level individual quizzing across history, science, literature, and the arts — built on fast recall under pressure.",
-      },
-      {
-        title: "Academic Bowl",
-        meta: "Team quizzing",
-        description:
-          "Team-based competition emphasizing collaboration, role specialization, and composure across fast-paced rounds.",
-      },
-      {
-        title: "Geography Bee / Bowl",
-        meta: "Places, patterns, recall",
-        description:
-          "Individual and team geography competition — mapping places, patterns, and global systems with speed and accuracy.",
-      },
-      {
-        title: "Humanities Bee",
-        meta: "History, literature, culture",
-        description:
-          "Competition spanning history, literature, philosophy, and the ideas that shaped them.",
-      },
-      {
-        title: "NAQT Quiz Bowl",
-        meta: "Practice, pressure, team rounds",
-        description:
-          "Competitive quiz bowl built on disciplined practice, repetition, and improving after every round.",
+          "A left-arm leg spinner who took a three-wicket haul in the final to win the U13 NCCA championship — built on disciplined practice, control, and reading the game under pressure.",
       },
     ],
   },
   {
-    group: "Leadership & Speaking",
+    group: "Academic competitions",
     items: [
       {
+        title: "Quiz Bowl (NAQT)",
+        meta: "Buzzer competition",
+        description:
+          "Fast-recall buzzer competition across history, science, literature, and the arts — team and individual rounds built on prep, repetition, and improving after every match.",
+      },
+      {
+        title: "Academic, Humanities & Geography Bees and Bowls",
+        meta: "Individual + team",
+        description:
+          "National-level quizzing spanning history, literature, culture, science, and world geography — mapping places, patterns, and ideas with speed and accuracy.",
+      },
+      {
         title: "Model United Nations",
-        meta: "Research · negotiation · diplomacy",
+        meta: "Research · negotiation",
         description:
           "Delegate work centered on deep research, structured negotiation, public speaking, and building consensus.",
       },
       {
         title: "Public Speaking & Debate",
-        meta: "Arguments, delivery, rebuttals",
+        meta: "Arguments · delivery · rebuttals",
         description:
-          "Constructing and defending arguments, refining delivery, and thinking on my feet under cross-examination.",
+          "Constructing and defending arguments, refining delivery, and thinking on my feet under cross-examination — the same instinct behind Fracture.",
       },
     ],
   },
   {
-    group: "Craft & Technical",
+    group: "Off the keyboard",
     items: [
-      {
-        title: "AI & Machine Learning",
-        meta: "Models, tools, applications",
-        description:
-          "Hands-on exploration of models and tooling — understanding what they can build and how to apply them in products.",
-      },
-      {
-        title: "Hardware Tinkering",
-        meta: "Raspberry Pi, computers, networks",
-        description:
-          "Building and experimenting with hardware, single-board computers, and home networking to understand systems end to end.",
-      },
       {
         title: "Carnatic Electric Guitar",
         meta: "Classical training",
         description:
-          "Classical Carnatic training adapted to electric guitar — discipline, practice, and structure applied to craft.",
+          "Classical Carnatic training adapted to electric guitar — plus a lot of just listening to music.",
+      },
+      {
+        title: "Hardware Tinkering",
+        meta: "Raspberry Pi · home networks",
+        description:
+          "Building and experimenting with single-board computers and home networking to understand systems end to end.",
       },
     ],
-  },
-];
-
-export const interests: { title: string; description: string; icon: LucideIcon }[] = [
-  {
-    title: "Software Engineering",
-    description:
-      "Designing systems that are clean, reliable, and built to scale with the problem.",
-    icon: Code2,
-  },
-  {
-    title: "Artificial Intelligence",
-    description:
-      "Applying models and language systems to build genuinely useful tools.",
-    icon: Cpu,
-  },
-  {
-    title: "Startups",
-    description:
-      "Turning ideas into products, and learning how good companies get built.",
-    icon: Rocket,
-  },
-  {
-    title: "Product Design",
-    description:
-      "Shaping how a product feels — flow, clarity, and the details that matter.",
-    icon: PenTool,
-  },
-  {
-    title: "Web Development",
-    description:
-      "Building fast, accessible, modern web experiences from front to back.",
-    icon: Globe,
-  },
-  {
-    title: "Human-Computer Interaction",
-    description:
-      "Understanding how people and systems meet, and making that meeting better.",
-    icon: MousePointerClick,
   },
 ];

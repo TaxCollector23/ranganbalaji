@@ -1,59 +1,46 @@
 import { projects } from "@/lib/data";
 import SectionHeader from "./ui/SectionHeader";
 import Reveal from "./ui/Reveal";
-import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Projects() {
   return (
     <section className="section" id="work">
       <div className="wrap">
-        <SectionHeader label="Featured Projects" />
+        <SectionHeader label="Selected Work" />
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <ol className="proj-list">
           {projects.map((p, i) => (
-            <Reveal key={p.name} delay={i * 0.08}>
+            <Reveal as="li" key={p.name} delay={i * 0.05} className="proj-item">
               <a
                 href={p.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="card corner group block overflow-hidden"
+                className="proj-row group"
               >
-                {/* Browser frame mockup */}
-                <div className="border-b border-[color:var(--border)] bg-[hsl(0_0%_10%)]">
-                  <div className="flex items-center gap-2.5 px-4 py-3">
-                    <span className="flex gap-1.5">
-                      <span className="h-[10px] w-[10px] rounded-full bg-[hsl(0_0%_25%)]" />
-                      <span className="h-[10px] w-[10px] rounded-full bg-[hsl(0_0%_25%)]" />
-                      <span className="h-[10px] w-[10px] rounded-full bg-[hsl(0_0%_25%)]" />
-                    </span>
-                    <span className="ml-2 font-[family-name:var(--font-mono)] text-[11px] tracking-wide text-[hsl(0_0%_40%)]">
-                      {new URL(p.href).hostname}
-                    </span>
-                  </div>
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <Image
-                      src={p.image}
-                      alt={`${p.name} screenshot`}
-                      fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
-                      sizes="(max-width: 640px) 100vw, 50vw"
-                    />
-                  </div>
-                </div>
+                <span className="proj-index mono" aria-hidden>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
 
-                {/* Title and tagline */}
-                <div className="p-6">
-                  <h3 className="font-[family-name:var(--font-display)] text-[22px] font-semibold leading-tight text-[color:var(--text)]">
-                    {p.name}
-                  </h3>
-                  <p className="mt-2 text-[14px] font-light leading-relaxed text-[hsl(0_0%_60%)]">
-                    {p.tagline}
-                  </p>
-                </div>
+                <span className="proj-main">
+                  <span className="proj-titleline">
+                    <span className="proj-name">{p.name}</span>
+                    <span className="proj-tag mono">{p.tag}</span>
+                    <ArrowUpRight
+                      size={17}
+                      strokeWidth={1.6}
+                      className="proj-arrow"
+                    />
+                  </span>
+                  <span className="proj-blurb">{p.blurb}</span>
+                  <span className="proj-host mono">
+                    {new URL(p.href).hostname.replace(/^www\./, "")}
+                  </span>
+                </span>
               </a>
             </Reveal>
           ))}
-        </div>
+        </ol>
       </div>
     </section>
   );
