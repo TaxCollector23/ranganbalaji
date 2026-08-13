@@ -25,7 +25,6 @@ export default function Projects() {
                 <span className="proj-main">
                   <span className="proj-titleline">
                     <span className="proj-name">{p.name}</span>
-                    <span className="proj-tag mono">{p.tag}</span>
                     <ArrowUpRight
                       size={17}
                       strokeWidth={1.6}

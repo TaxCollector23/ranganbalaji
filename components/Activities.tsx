@@ -14,7 +14,7 @@ export default function Activities() {
               <h3 className="likes-label mono">{group.group}</h3>
               <ul className="likes-items">
                 {group.items.map((item) => (
-                  <li key={item} className="likes-chip">
+                  <li key={item} className="likes-item">
                     {item}
                   </li>
                 ))}
