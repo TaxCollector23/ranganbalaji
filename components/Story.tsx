@@ -21,13 +21,6 @@ export default function Story() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal delay={0.28}>
-          <p className="story-now">
-            <span className="story-now-dot" aria-hidden />
-            {story.now}
-          </p>
-        </Reveal>
       </div>
     </section>
   );

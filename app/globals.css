@@ -584,23 +584,23 @@ a {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  align-items: baseline;
+  gap: 2px 0;
 }
 .likes-chip {
-  font-family: var(--font-sans);
-  font-size: 14px;
-  font-weight: 400;
-  color: hsl(0 0% 78%);
-  border: 1px solid var(--border-hi);
-  background: hsl(213 10% 6%);
-  padding: 8px 15px;
-  border-radius: 999px;
-  transition: border-color 0.25s, color 0.25s, background 0.25s;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  font-weight: 300;
+  color: hsl(0 0% 72%);
+  transition: color 0.25s;
 }
 .likes-chip:hover {
-  border-color: var(--accent-lo);
   color: var(--accent-hi);
-  background: hsl(213 14% 10%);
+}
+.likes-chip:not(:last-child)::after {
+  content: "·";
+  margin: 0 12px;
+  color: var(--border-hi);
 }
 
 @media (max-width: 640px) {

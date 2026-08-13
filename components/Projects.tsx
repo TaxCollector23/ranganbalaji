@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <section className="section" id="work">
       <div className="wrap">
-        <SectionHeader label="Selected Work" />
+        <SectionHeader label="Some of My Best Work" />
 
         <ol className="proj-list">
           {projects.map((p, i) => (

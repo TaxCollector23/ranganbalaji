@@ -9,7 +9,7 @@ export const site = {
   role: "Builder · Vibecoder · Student",
   url: "https://rangan.balajin.net",
   headline:
-    "I'm a middle schooler building real tools with AI — usually to fix something that was getting in my own way.",
+    "I'm a middle schooler who builds real, useful tools with AI — the kind of software I want to exist, and then ship.",
   intro:
     "Rangan Balaji is a middle school student who builds software with AI — argument engines, dev tools, and small utilities that started as fixes for his own workflow.",
   email: "rvb@balajin.net",
@@ -44,13 +44,9 @@ export const story = {
   label: "About",
   lead: "How I got here",
   paragraphs: [
-    "I'm a middle school student, and I got into this the backwards way — I started by vibecoding. My first builds were on tools like Base44 and Lovable, where I could describe what I wanted and watch it show up on the screen. That got me hooked on the loop of going from an idea to a working thing, so I kept pushing: hand-writing static HTML to actually understand what was happening underneath, and then moving into full-stack, agent-driven development with Codex and Claude Code. Somewhere along the way it stopped being a hobby and turned into the main thing I do.",
-    "Almost everything on this page is something I genuinely wanted for myself first. Fracture came out of wanting my own arguments — in essays and in debate — to hold up when someone actually pushed back on them. Unslopify and ClaudeKeeper came straight out of the friction of working with AI agents all day: one keeps them from cutting corners and filling space with junk, the other keeps my machine awake long enough to finish a long run. I don't build things to have a portfolio. I build because something in front of me is annoying or broken, and fixing it myself is faster and more satisfying than waiting for someone else to.",
-    "The part I love most isn't even on a screen. I'm obsessed with hardware — testing mini computers, taking machines apart just to see how they really work, wiring up small single-board computers, and setting up my workbench so every project has a place to live. Software taught me to think in systems; hardware is where I actually get to hold one in my hands, break it, and put it back together better.",
-    "Outside of all that, I play cricket, listen to way too much music, and compete in quiz bowl and other academic competitions. Different arenas, but the same instinct runs through all of them — prepare hard, stay calm when it counts, and try to come out a little sharper every round.",
+    "I'm a middle school student, and I got into this the backwards way — I started by vibecoding on tools like Base44 and Lovable, then taught myself to hand-write static HTML so I actually understood what was happening underneath. These days I build full-stack, using agent-driven tools like Codex and Claude Code. Almost everything on this page is something I wanted for myself first: Fracture so my own arguments hold up, Unslopify and ClaudeKeeper to smooth out the friction of working with AI agents all day. I build because something in front of me is broken or annoying, and fixing it myself is faster and a lot more satisfying than waiting for someone else to.",
+    "The part I love most isn't even on a screen — I'm obsessed with hardware, from testing mini computers to taking machines apart to see how they really work to building out my workbench. Software taught me to think in systems; hardware is where I get to hold one in my hands. The same instinct runs through the rest of what I do, from cricket to quiz bowl: prepare hard, stay calm, and come out a little sharper each time.",
   ],
-  /* short, honest signal line — no invented metrics */
-  now: "Currently building Fracture Studio and open to internships, research, and people to build with.",
 };
 
 export type Project = {
