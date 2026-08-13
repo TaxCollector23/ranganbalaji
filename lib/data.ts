@@ -44,9 +44,10 @@ export const story = {
   label: "About",
   lead: "How I got here",
   paragraphs: [
-    "I'm a middle school student, and I got into this the backwards way — I started by vibecoding. First with tools like Base44 and Lovable, then hand-writing static HTML, and eventually full-stack, agent-driven development with Codex and Claude Code. Somewhere along the way it stopped being a hobby and turned into the main thing I do.",
-    "Almost everything on this page is something I actually wanted for myself. Fracture came from wanting my own arguments to hold up. Unslopify and ClaudeKeeper came straight out of the friction of working with AI agents all day. My loop is simple: find the thing in front of me that's annoying or broken, build something that fixes it, ship it, then keep sharpening it.",
-    "Away from the keyboard I play cricket, listen to way too much music, and compete in quiz bowl and other academic competitions. It's the same loop as building — prepare hard, stay calm under pressure, and try to be a little sharper every round.",
+    "I'm a middle school student, and I got into this the backwards way — I started by vibecoding. My first builds were on tools like Base44 and Lovable, where I could describe what I wanted and watch it show up on the screen. That got me hooked on the loop of going from an idea to a working thing, so I kept pushing: hand-writing static HTML to actually understand what was happening underneath, and then moving into full-stack, agent-driven development with Codex and Claude Code. Somewhere along the way it stopped being a hobby and turned into the main thing I do.",
+    "Almost everything on this page is something I genuinely wanted for myself first. Fracture came out of wanting my own arguments — in essays and in debate — to hold up when someone actually pushed back on them. Unslopify and ClaudeKeeper came straight out of the friction of working with AI agents all day: one keeps them from cutting corners and filling space with junk, the other keeps my machine awake long enough to finish a long run. I don't build things to have a portfolio. I build because something in front of me is annoying or broken, and fixing it myself is faster and more satisfying than waiting for someone else to.",
+    "The part I love most isn't even on a screen. I'm obsessed with hardware — testing mini computers, taking machines apart just to see how they really work, wiring up small single-board computers, and setting up my workbench so every project has a place to live. Software taught me to think in systems; hardware is where I actually get to hold one in my hands, break it, and put it back together better.",
+    "Outside of all that, I play cricket, listen to way too much music, and compete in quiz bowl and other academic competitions. Different arenas, but the same instinct runs through all of them — prepare hard, stay calm when it counts, and try to come out a little sharper every round.",
   ],
   /* short, honest signal line — no invented metrics */
   now: "Currently building Fracture Studio and open to internships, research, and people to build with.",
@@ -112,73 +113,40 @@ export const projects: Project[] = [
   },
 ];
 
-export type Activity = {
-  title: string;
-  meta: string;
-  description: string;
-};
-
-export type ActivityGroup = {
+export type LikeGroup = {
   group: string;
-  items: Activity[];
+  items: string[];
 };
 
-export const activities: ActivityGroup[] = [
+/* Things I like to do — just the activities, no accomplishments. */
+export const likes: LikeGroup[] = [
   {
-    group: "Cricket",
+    group: "Hardware & tinkering",
     items: [
-      {
-        title: "U13 NCCA Champions",
-        meta: "Left-arm leg spin",
-        description:
-          "A left-arm leg spinner who took a three-wicket haul in the final to win the U13 NCCA championship — built on disciplined practice, control, and reading the game under pressure.",
-      },
+      "Testing mini computers",
+      "Taking computers apart",
+      "Small & single-board computers",
+      "Raspberry Pi",
+      "Building out my workbench",
+      "Home networking",
     ],
+  },
+  {
+    group: "Sport",
+    items: ["Cricket"],
   },
   {
     group: "Academic competitions",
     items: [
-      {
-        title: "Quiz Bowl (NAQT)",
-        meta: "Buzzer competition",
-        description:
-          "Fast-recall buzzer competition across history, science, literature, and the arts — team and individual rounds built on prep, repetition, and improving after every match.",
-      },
-      {
-        title: "Academic, Humanities & Geography Bees and Bowls",
-        meta: "Individual + team",
-        description:
-          "National-level quizzing spanning history, literature, culture, science, and world geography — mapping places, patterns, and ideas with speed and accuracy.",
-      },
-      {
-        title: "Model United Nations",
-        meta: "Research · negotiation",
-        description:
-          "Delegate work centered on deep research, structured negotiation, public speaking, and building consensus.",
-      },
-      {
-        title: "Public Speaking & Debate",
-        meta: "Arguments · delivery · rebuttals",
-        description:
-          "Constructing and defending arguments, refining delivery, and thinking on my feet under cross-examination — the same instinct behind Fracture.",
-      },
+      "Quiz bowl",
+      "Academic Bee & Bowl",
+      "Geography Bee",
+      "Model UN",
+      "Debate",
     ],
   },
   {
-    group: "Off the keyboard",
-    items: [
-      {
-        title: "Carnatic Electric Guitar",
-        meta: "Classical training",
-        description:
-          "Classical Carnatic training adapted to electric guitar — plus a lot of just listening to music.",
-      },
-      {
-        title: "Hardware Tinkering",
-        meta: "Raspberry Pi · home networks",
-        description:
-          "Building and experimenting with single-board computers and home networking to understand systems end to end.",
-      },
-    ],
+    group: "Music",
+    items: ["Electric guitar", "Listening to music"],
   },
 ];

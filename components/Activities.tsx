@@ -1,4 +1,4 @@
-import { activities } from "@/lib/data";
+import { likes } from "@/lib/data";
 import SectionHeader from "./ui/SectionHeader";
 import Reveal from "./ui/Reveal";
 
@@ -6,20 +6,16 @@ export default function Activities() {
   return (
     <section className="section" id="beyond">
       <div className="wrap">
-        <SectionHeader label="Beyond Code" />
+        <SectionHeader label="Things I Like To Do" />
 
-        <div className="act-groups">
-          {activities.map((group, gi) => (
-            <Reveal key={group.group} delay={gi * 0.06} className="act-group">
-              <h3 className="act-group-label mono">{group.group}</h3>
-              <ul className="act-items">
+        <div className="likes-groups">
+          {likes.map((group, gi) => (
+            <Reveal key={group.group} delay={gi * 0.06} className="likes-group">
+              <h3 className="likes-label mono">{group.group}</h3>
+              <ul className="likes-items">
                 {group.items.map((item) => (
-                  <li key={item.title} className="act-item">
-                    <div className="act-item-head">
-                      <span className="act-title">{item.title}</span>
-                      <span className="act-meta mono">{item.meta}</span>
-                    </div>
-                    <p className="act-desc">{item.description}</p>
+                  <li key={item} className="likes-chip">
+                    {item}
                   </li>
                 ))}
               </ul>
