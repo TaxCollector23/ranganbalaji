@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { cormorant, spaceGrotesk, sourceSerif, dmMono } from "@/lib/fonts";
 import { site } from "@/lib/data";
+import SiteNav from "@/components/SiteNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -57,7 +58,10 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${spaceGrotesk.variable} ${sourceSerif.variable} ${dmMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <SiteNav />
+        {children}
+      </body>
     </html>
   );
 }

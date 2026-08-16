@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import Story from "@/components/Story";
 import Projects from "@/components/Projects";
-import Activities from "@/components/Activities";
 import Footer from "@/components/Footer";
 import { site } from "@/lib/data";
 
@@ -26,7 +25,6 @@ export default function Home() {
       <Hero />
       <Story />
       <Projects />
-      <Activities />
       <Footer />
     </main>
   );

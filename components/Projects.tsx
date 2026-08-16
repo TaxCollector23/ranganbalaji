@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { projects } from "@/lib/data";
 import SectionHeader from "./ui/SectionHeader";
 import Reveal from "./ui/Reveal";
@@ -7,39 +8,25 @@ export default function Projects() {
   return (
     <section className="section" id="work">
       <div className="wrap">
-        <SectionHeader label="Some of My Best Work" />
+        <SectionHeader label="Selected work" />
 
-        <ol className="proj-list">
+        <ul className="work-list">
           {projects.map((p, i) => (
-            <Reveal as="li" key={p.name} delay={i * 0.05} className="proj-item">
-              <a
-                href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="proj-row group"
-              >
-                <span className="proj-index mono" aria-hidden>
-                  {String(i + 1).padStart(2, "0")}
+            <Reveal as="li" key={p.slug} delay={i * 0.04} className="work-item">
+              <Link href={`/${p.slug}`} className="work-row group">
+                <span className="work-main">
+                  <span className="work-name">{p.name}</span>
+                  <span className="work-desc">{p.short}</span>
                 </span>
-
-                <span className="proj-main">
-                  <span className="proj-titleline">
-                    <span className="proj-name">{p.name}</span>
-                    <ArrowUpRight
-                      size={17}
-                      strokeWidth={1.6}
-                      className="proj-arrow"
-                    />
-                  </span>
-                  <span className="proj-blurb">{p.blurb}</span>
-                  <span className="proj-host mono">
-                    {new URL(p.href).hostname.replace(/^www\./, "")}
-                  </span>
-                </span>
-              </a>
+                <ArrowUpRight
+                  size={15}
+                  strokeWidth={1.6}
+                  className="work-arrow"
+                />
+              </Link>
             </Reveal>
           ))}
-        </ol>
+        </ul>
       </div>
     </section>
   );
