@@ -479,7 +479,7 @@ a {
   font-family: var(--font-sans);
   font-size: 12px;
   letter-spacing: 0.08em;
-  color: var(--muted);
+  color: var(--text);
   transition: color 0.25s;
 }
 .nav-link:hover {
@@ -534,10 +534,11 @@ a {
   min-width: 0;
 }
 .work-name {
-  font-family: var(--font-display);
-  font-size: 21px;
+  font-family: var(--font-sans);
+  font-size: 18px;
   font-weight: 500;
-  line-height: 1.2;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
   color: var(--text);
   transition: color 0.25s;
 }
@@ -675,6 +676,62 @@ a {
   color: hsl(0 0% 32%);
 }
 
+/* live project embed (browser-frame) */
+.embed {
+  margin-top: 44px;
+  border: 1px solid var(--border-hi);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--card);
+}
+.embed-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  background: hsl(0 0% 9%);
+}
+.embed-dots {
+  display: inline-flex;
+  gap: 6px;
+}
+.embed-dots i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border-hi);
+}
+.embed-host {
+  flex: 1;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.embed-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  transition: color 0.25s;
+}
+.embed-open:hover {
+  color: var(--accent-hi);
+}
+.embed-frame {
+  display: block;
+  width: 100%;
+  height: 72vh;
+  min-height: 460px;
+  border: 0;
+  background: #fff;
+}
+
 /* blog list */
 .post-list {
   list-style: none;
@@ -742,7 +799,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 18px 6px 18px 4px;
+  padding: 22px 6px 22px 4px;
   transition: background 0.25s, padding-left 0.25s;
 }
 .social-row:not(.social-static):hover {
@@ -759,11 +816,11 @@ a {
 }
 .social-label {
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text);
 }
 .social-handle {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
   text-align: right;
   word-break: break-word;

@@ -31,7 +31,7 @@ export default function SocialsPage() {
             const inner = (
               <>
                 <span className="social-left">
-                  <Icon size={15} strokeWidth={1.6} className="social-icon" />
+                  <Icon size={17} strokeWidth={1.6} className="social-icon" />
                   <span className="social-label">{s.label}</span>
                 </span>
                 <span className="social-handle mono">{s.handle}</span>

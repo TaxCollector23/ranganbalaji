@@ -64,7 +64,7 @@ export default async function ProjectPage({
               rel="noopener noreferrer"
               className="btn"
             >
-              Live site
+              Open full site
               <ArrowUpRight size={13} strokeWidth={1.6} className="btn-arr" />
             </a>
             {project.github && (
@@ -79,8 +79,33 @@ export default async function ProjectPage({
               </a>
             )}
           </div>
+        </Reveal>
 
-          <p className="page-host mono">{host}</p>
+        <Reveal delay={0.14} className="embed">
+          <div className="embed-bar">
+            <span className="embed-dots" aria-hidden>
+              <i />
+              <i />
+              <i />
+            </span>
+            <span className="embed-host mono">{host}</span>
+            <a
+              href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="embed-open mono"
+            >
+              Open
+              <ArrowUpRight size={12} strokeWidth={1.7} />
+            </a>
+          </div>
+          <iframe
+            src={project.href}
+            title={`${project.name} live preview`}
+            className="embed-frame"
+            loading="lazy"
+            allow="clipboard-write; fullscreen"
+          />
         </Reveal>
       </div>
     </main>
