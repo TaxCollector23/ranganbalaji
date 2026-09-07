@@ -9,8 +9,8 @@ export default function SiteNav() {
           {site.name}
         </Link>
         <nav className="nav-links">
-          <Link href="/blog" className="nav-link">
-            Blog
+          <Link href="/#press" className="nav-link">
+            Press
           </Link>
           <Link href="/socials" className="nav-link">
             Socials
