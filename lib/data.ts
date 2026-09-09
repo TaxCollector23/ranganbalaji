@@ -95,7 +95,7 @@ export const projects: Project[] = [
     name: "Fracture Studio",
     slug: "fracture",
     short: "AI argument auditor for speeches, essays, and debate cases.",
-    href: "https://fracturestudio.vercel.app/",
+    href: "https://fracture-studio-psi.vercel.app/",
     what:
       "You paste in a speech, essay, or debate case and Fracture stress-tests the reasoning. It finds the load-bearing claim everything rests on, fact-checks against the live web, and hands back a 0 to 100 score with an opponent attack tree and rewrites you can use right away.",
     why:
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     name: "Trace",
     slug: "trace",
     short: "A review and safety layer for AI coding agents.",
-    href: "https://landing-one-hazel-88.vercel.app/",
+    href: "https://trace-snowy-three.vercel.app/",
     what:
       "Trace watches the files that agents like Claude Code and Cursor touch and turns each session into a reviewable diff, a policy-checked patch, and an undoable checkpoint. Riskier changes get a second look from independent models, and the same engine can run on every pull request.",
     why:
@@ -115,7 +115,7 @@ export const projects: Project[] = [
     name: "SimAPI",
     slug: "simapi",
     short: "Sanity checks for physics, CFD, and robotics simulation output.",
-    href: "https://sim-api.vercel.app/",
+    href: "https://simapi-app.vercel.app/",
     what:
       "SimAPI checks simulation output against physical law and flags diverged runs, unit slips, sensor drift, and impossible values before the data reaches a design review or an ML pipeline. It ships as a CLI, an SDK, and a REST API.",
     why:
@@ -135,7 +135,7 @@ export const projects: Project[] = [
     name: "Carbon",
     slug: "carbon",
     short: "Spins up a local, stateful mock of any API.",
-    href: "https://carbon-web-psi.vercel.app",
+    href: "https://carbonweb-alpha.vercel.app",
     what:
       "Point Carbon at an OpenAPI spec, a GraphQL schema, or recorded traffic and it spins up a local replica of that API, one where a POST actually changes what the next GET returns. It is deterministic and runs fully offline.",
     why:
