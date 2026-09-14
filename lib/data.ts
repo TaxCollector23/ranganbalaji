@@ -141,6 +141,16 @@ export const projects: Project[] = [
     why:
       "I was tired of building against flaky staging backends. I wanted a mock that behaved like the real thing so I could work offline and get the same result every time.",
   },
+  {
+    name: "Sharely",
+    slug: "sharely",
+    short: "Run one command and get a link anyone on your Wi-Fi can open.",
+    href: "https://landing-delta-puce-72.vercel.app/",
+    what:
+      "Run one command and Sharely serves a folder straight from your machine and hands back a link that anyone on the same Wi-Fi can open. No sign-ups, no uploads, no accounts — the files stream directly off your computer.",
+    why:
+      "I was tired of re-uploading files to email or chat apps just to get them onto another device on the same network. I wanted a one-command way to share a folder with anyone nearby.",
+  },
 ];
 
 export function getProject(slug: string): Project | undefined {
