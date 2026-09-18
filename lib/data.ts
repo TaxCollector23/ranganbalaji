@@ -59,8 +59,8 @@ export const story = {
   label: "About",
   lead: "More about me",
   paragraphs: [
-    "I'm a student who spends most of my free time building full-stack products with AI coding tools like Claude Code and Codex, usually starting from something I wanted for myself.",
-    "Outside of that, I play cricket and electric guitar.",
+    "I'm a student interested in software, AI, and the way technology can solve practical problems. I spend a lot of my free time building full-stack projects, usually starting with something I wish existed and figuring out how to make it work.",
+    "I'm also interested in computer science, law, geography, and history. Outside of tech, I play cricket and electric guitar.",
   ],
 };
 
