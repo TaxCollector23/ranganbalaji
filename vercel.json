@@ -4,6 +4,18 @@
   "framework": null,
   "rewrites": [
     {
+      "source": "/buzzin",
+      "destination": "https://buzzin-nine.vercel.app/"
+    },
+    {
+      "source": "/buzzin/",
+      "destination": "https://buzzin-nine.vercel.app/"
+    },
+    {
+      "source": "/buzzin/:path*",
+      "destination": "https://buzzin-nine.vercel.app/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/$1"
     }
