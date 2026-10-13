@@ -8,12 +8,8 @@ import {
 
 export const site = {
   name: "Rangan Balaji",
-  role: "Builder · Vibecoder · Student",
+  role: "Student · Founder · Developer",
   url: "https://rangan.xyz",
-  headline:
-    "A student building full-stack products with AI in my free time.",
-  intro:
-    "Rangan Balaji is a middle school student who builds software with AI — argument engines, dev tools, and small utilities that started as fixes for his own workflow.",
   email: "ranganbalaji23@gmail.com",
   github: "https://github.com/TaxCollector23",
   githubHandle: "TaxCollector23",
@@ -21,12 +17,38 @@ export const site = {
   linkedinName: "Rangan Balaji",
   discord: "taxcollector23",
   discordUrl: "https://discord.com/users/1501075918918258739",
+  headline:
+    "Hey, I'm Rangan. I'm 13 years old, I enjoy AI Development and tinkering with ML, and outside of that I play cricket and play the guitar.",
+  intro:
+    "Most of what I build starts because I run into something annoying or something I wish already existed. Usually, instead of finding some workaround, I just end up building it myself.",
 } as const;
+
+export const about = [
+  "Hey, I'm Rangan. I'm 13 years old, I enjoy AI Development and tinkering with ML, and outside of that I play cricket and play the guitar.",
+  "Aspiring software engineer.",
+  "Most of what I build starts because I run into something annoying or something I wish already existed. Usually, instead of finding some workaround, I just end up building it myself.",
+  "It normally starts as a small tool, then turns into something I think other people could use or mess around with too. Everything here is open source, so if you find something useful, fork it, change it, break it, and make sure it works however you want.",
+] as const;
+
+export const projectsIntro =
+  "I've built many projects in the past, but below are some of the ones I'm most proud of. These are all something that either specifically solve a problem I have, or have been built at a hackathon, and these are still under development.";
+
+export const stack = [
+  "Codex",
+  "Git",
+  "Java",
+  "JavaScript",
+  "TypeScript",
+  "Python",
+  "CSS",
+  "Next.js",
+  "Vercel",
+] as const;
 
 export const socials: {
   label: string;
   handle: string;
-  href: string | null;
+  href: string;
   icon: LucideIcon;
 }[] = [
   {
@@ -55,104 +77,53 @@ export const socials: {
   },
 ];
 
-export const story = {
-  label: "About",
-  lead: "More about me",
-  paragraphs: [
-    "I'm a student interested in software, AI, and the way technology can solve practical problems. I spend a lot of my free time building full-stack projects, usually starting with something I wish existed and figuring out how to make it work.",
-    "I'm also interested in computer science, law, geography, and history. Outside of tech, I play cricket and electric guitar.",
-  ],
-};
-
-export type PressItem = {
-  outlet: string;
-  title: string;
-  href: string;
-};
-
-export const press: PressItem[] = [
-  {
-    outlet: "Austin South Asian",
-    title:
-      "Austin Hosts Another Successful AMLCA National Youth Cricket Tournament",
-    href: "https://www.austinsouthasian.com/post/austin-hosts-another-successful-amlca-national-youth-cricket-tournament",
-  },
-];
-
 export type Project = {
   name: string;
   slug: string;
-  short: string; // one line, shown on the homepage card
-  href: string; // live site
-  github?: string; // repo, when public
-  what: string; // what it does
-  why: string; // why I built it
+  short: string;
+  href: string;
 };
 
-/* Order is intentional — flagship first, then the rest. */
 export const projects: Project[] = [
   {
     name: "Fracture Studio",
     slug: "fracture",
     short: "AI argument auditor for speeches, essays, and debate cases.",
     href: "https://fracture-studio-psi.vercel.app/",
-    what:
-      "You paste in a speech, essay, or debate case and Fracture stress-tests the reasoning. It finds the load-bearing claim everything rests on, fact-checks against the live web, and hands back a 0 to 100 score with an opponent attack tree and rewrites you can use right away.",
-    why:
-      "I do debate, and I wanted something that would poke holes in my own cases before a judge did. Reading my arguments back the way an opponent would was the fastest way to make them stronger.",
   },
   {
     name: "Trace",
     slug: "trace",
     short: "A review and safety layer for AI coding agents.",
-    href: "https://github.com/TaxCollector23/ranganbalaji",
-    what:
-      "Trace watches the files that agents like Claude Code and Cursor touch and turns each session into a reviewable diff, a policy-checked patch, and an undoable checkpoint. Riskier changes get a second look from independent models, and the same engine can run on every pull request.",
-    why:
-      "I use coding agents every day, and letting them edit my repo unsupervised made me nervous. I wanted a way to see exactly what changed and roll it back in one step.",
-  },
-  {
-    name: "SimAPI",
-    slug: "simapi",
-    short: "Sanity checks for physics, CFD, and robotics simulation output.",
-    href: "https://simapi-app.vercel.app/",
-    what:
-      "SimAPI checks simulation output against physical law and flags diverged runs, unit slips, sensor drift, and impossible values before the data reaches a design review or an ML pipeline. It ships as a CLI, an SDK, and a REST API.",
-    why:
-      "A solver will happily hand you a wrong answer with no warning. I wanted a guardrail that catches the obviously broken runs before anyone downstream trusts them.",
+    href: "https://trace-landing-blue.vercel.app/",
   },
   {
     name: "AfterCare",
     slug: "aftercare",
     short: "Turns a hospital discharge summary into a plan you can follow.",
     href: "https://marinhackstigermygoat.vercel.app/",
-    what:
-      "AfterCare reads a discharge summary, from a PDF or a photo, and turns it into your medications, appointments, warning signs, and a daily plan. Every line traces back to your own paperwork, it reads itself aloud in several languages, and it never invents a dose or a date.",
-    why:
-      "Built at MarinHacks. The stack of paperwork you get leaving a hospital is dense and easy to misread on a bad day, and I wanted to make it something a person could actually act on.",
-  },
-  {
-    name: "Carbon",
-    slug: "carbon",
-    short: "Spins up a local, stateful mock of any API.",
-    href: "https://carbonweb-alpha.vercel.app",
-    what:
-      "Point Carbon at an OpenAPI spec, a GraphQL schema, or recorded traffic and it spins up a local replica of that API, one where a POST actually changes what the next GET returns. It is deterministic and runs fully offline.",
-    why:
-      "I was tired of building against flaky staging backends. I wanted a mock that behaved like the real thing so I could work offline and get the same result every time.",
   },
   {
     name: "Sharely",
     slug: "sharely",
     short: "Run one command and get a link anyone on your Wi-Fi can open.",
     href: "https://landing-delta-puce-72.vercel.app/",
-    what:
-      "Run one command and Sharely serves a folder straight from your machine and hands back a link that anyone on the same Wi-Fi can open. No sign-ups, no uploads, no accounts — the files stream directly off your computer.",
-    why:
-      "I was tired of re-uploading files to email or chat apps just to get them onto another device on the same network. I wanted a one-command way to share a folder with anyone nearby.",
   },
 ];
 
+// Kept for the existing sub-page components in this repository.
+export const story = {
+  label: "About",
+  lead: "More about me",
+  paragraphs: about,
+};
+
+export const press = [] as {
+  outlet: string;
+  title: string;
+  href: string;
+}[];
+
 export function getProject(slug: string): Project | undefined {
-  return projects.find((p) => p.slug === slug);
+  return projects.find((project) => project.slug === slug);
 }
