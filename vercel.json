@@ -1,7 +1,7 @@
 {
-  "buildCommand": "true",
-  "outputDirectory": ".",
-  "framework": null,
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
   "rewrites": [
     {
       "source": "/buzzin",
@@ -14,10 +14,6 @@
     {
       "source": "/buzzin/:path*",
       "destination": "https://buzzin-nine.vercel.app/:path*"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/$1"
     }
   ]
 }
