@@ -1,7 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "nextjs",
-  "buildCommand": "npm run build",
+  "framework": null,
+  "installCommand": "echo 'Static site: no dependencies required'",
+  "buildCommand": "node scripts/build-static.mjs",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/buzzin",
