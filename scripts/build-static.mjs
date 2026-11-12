@@ -10,4 +10,6 @@ for (const path of ["index.html", "styles.css", "script.js", "contact-me", "font
   await cp(new URL(path, root), new URL(path, output), { recursive: true });
 }
 
-console.log("Built original dark portfolio in dist/");
+await cp(new URL("web/landing/dist/", root), new URL("sharely/", output), { recursive: true });
+
+console.log("Built portfolio and Sharely landing page in dist/");
