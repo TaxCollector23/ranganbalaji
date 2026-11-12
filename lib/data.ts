@@ -107,7 +107,7 @@ export const projects: Project[] = [
     name: "Sharely",
     slug: "sharely",
     short: "Run one command and get a link anyone on your Wi-Fi can open.",
-    href: "https://landing-delta-puce-72.vercel.app/",
+    href: "https://www.rangan.xyz/sharely",
   },
 ];
 
